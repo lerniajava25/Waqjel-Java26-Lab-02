@@ -29,7 +29,7 @@ Renderingsmotorn är helt modulär och använder polymorfi via gränssnittet `Sh
 Följ dessa två enkla steg för att skapa och använda en egen form:
 
 ### Skapa klassen och implementera `Shape`
-Skapa en ny Java-fil (till exempel `Cone.java`) i mappen `org.example`. Låt klassen implementera gränssnittet `Shape` och överskrid metoden `hit(Ray ray)`.
+Skapa en ny Java-fil (till exempel `Cone.java`) i mappen `org.example`. Låt klassen implementera gränssnittet `Shape` och **override** metoden `hit(Ray ray)`.
 
 Metodens uppgift är att räkna ut om ljusstrålen krockar med din form. Om strålen missar returnerar du `null`. Om den träffar returnerar du ett `HitRecord` med krockavståndet (t), träffpunkten, ytans normalvektor och formens material:
 
